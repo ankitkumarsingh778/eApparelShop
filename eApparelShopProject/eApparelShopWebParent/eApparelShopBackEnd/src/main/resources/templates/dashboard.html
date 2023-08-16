@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments :: page_head('Home - Shopme Admin', 'none')" />
+	
+<body>
+	<div class="container-fluid">
+		<div th:replace="navigation :: menu"></div>
+		<div>
+			<h2>Shop@24 Control Panel</h2>
+			Welcome
+			<a
+				th:href="@{/account}"
+				sec:authentication="principal.fullname"></a>
+			<span sec:authentication="principal.authorities"></span>
+		</div>
+
+		<h1>Welcome to the Dashboard</h1>
+		<h5>Covered So far.....:</h5>
+
+
+		<div class="d-flex flex-wrap justify-content-around flex-row bd-highlight mb-3">
+			<div class="card p-2 flex-fill bd-highlight">
+				<div class="card-body">
+					<h5 class="card-title">
+						Users: <span th:text="${userCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/users"
+						class="card-link">View All</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="/eApparelShopAdmin/users/new">Add User</a></li>
+						<li class="list-group-item">Enabled: <span th:text=${userEnabled}></span></li>
+						<li class="list-group-item">Disabled: <span th:text=${userDisabled}></span></li>
+					</ul>
+					<a
+						href="#"
+						class="card-link"></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						Categories: <span th:text="${catCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/categories"
+						class="card-link">View All</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="/eApparelShopAdmin/categories/new">Add Category</a></li>
+						<li class="list-group-item">Root Categories: <span th:text=${catRootCount}></span></li>
+						<li class="list-group-item">Enabled: <span th:text=${catEnabled}></span></li>
+					</ul>
+					<a
+						href="#"
+						class="card-link"></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						Brands: <span th:text="${brandCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/brands"
+						class="card-link">View All</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="/eApparelShopAdmin/brands/new">Add Brands</a></li>
+					</ul>
+					<a
+						href="#"
+						class="card-link"></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						Orders: <span th:text="${orderCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/orders"
+						class="card-link">View All</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">New: <span th:text="${orderCountNew}"></li>
+						<li class="list-group-item">Delivered: <span th:text="${orderCountDelivered}"></li>
+						<li class="list-group-item">Processing: <span th:text="${orderCountProcessing}"></li>
+						<li class="list-group-item">Returned: <span th:text="${orderCountReturned}"></li>
+					</ul>
+					<a
+						href="#"
+						class="card-link"></a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						Customers: <span th:text="${customerCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/customers"
+						class="card-link">View All</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Enabled: <span th:text="${customerEnabled}"></li>
+						<li class="list-group-item">Disabled: <span th:text="${customerDisabled}"></li>
+					</ul>
+					<a
+						href="#"
+						class="card-link"></a>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">
+						Products: <span th:text="${productsCount}"></span>
+					</h5>
+					<a
+						href="/eApparelShopAdmin/products/new"
+						class="card-link">Add Products</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Enabled: <span th:text="${productsEnabled}"></li>
+						<li class="list-group-item">Disabled: <span th:text="${productsDisabled}"></li>
+						<li class="list-group-item">In-Stock: <span th:text="${inStockProducts}"></li>
+						<li class="list-group-item">Out-of-Stock: <span th:text="${outStockProducts}"></li>
+					</ul>
+					<a
+						href="/eApparelShopAdmin/products/"
+						class="card-link">View All</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div th:replace="fragments :: footer"></div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;exception&apos; to &apos;com.eApparelShop.common.exception&apos;&#x0D;&#x0A;- Original project: &apos;eApparelShopCommon&apos;&#x0D;&#x0A;- Original element: &apos;eApparelShopCommon/src/main/java/exception&apos;&#x0D;&#x0A;- Renamed element: &apos;eApparelShopCommon/src/main/java/com.eApparelShop.common.exception&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;exception&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;exception" name="com.eApparelShop.common.exception" qualified="false" references="true" stamp="1681388994598" textual="false" version="1.0"/>
+</session>

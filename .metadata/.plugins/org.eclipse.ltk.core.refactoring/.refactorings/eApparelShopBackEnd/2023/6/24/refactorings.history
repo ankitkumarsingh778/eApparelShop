@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;eApparelShopBackEnd/src/main/resources/templates/123&apos; to &apos;error&apos;" description="Rename resource &apos;123&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/123" name="error" stamp="1686561658470" updateReferences="true"/>
+</session>

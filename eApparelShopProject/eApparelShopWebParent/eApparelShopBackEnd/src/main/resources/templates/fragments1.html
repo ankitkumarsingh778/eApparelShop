@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head th:fragment="page_head(title)">
+<meta
+	http-equiv="Content-Type"
+	content="text/html; charset=UTF-8" />
+<meta
+	name="viwport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<title>[[${title}]]</title>
+
+<link
+	rel="stylesheet"	
+	type="text/css"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+
+<link
+	rel="stylesheet"
+	type="text/css"
+	th:href="@{/fontawesome/all.css}" />
+
+<link
+	rel="stylesheet"
+	type="text/css"
+	th:href="@{/style.css}" />
+
+<script
+	type="text/javascript"
+	th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script
+	type="text/javascript"
+	th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+	<div
+		th:fragment="footer"
+		class="text-center m-3">
+		<footer>Admin Control Panel - Copyright &copy; eApparelShop</footer>
+	</div>
+
+	<div
+		th:fragment="category_actions"
+		th:remove="tag">
+		<a
+			class="fas fa-edit fa-2x icon-green"
+			th:href="@{'/categories/edit/'+ ${cat.id}}"
+			title="Edit this category"></a>
+		&nbsp;
+		<th:block th:if="${cat.hasChildren ==false}">
+			<a
+				th:href="@{'/categories/delete/'+${cat.id}}"
+				th:entityId="${cat.id}"
+				class="fas fa-trash fa-2x icon-dark link-delete"
+				title="Delete This category"></a>
+		</th:block>
+	</div>
+
+	<script
+		type="text/javascript"
+		th:fragment="logoutScript">
+        $(document).ready(function () {
+            $("#logoutLink").on("click", function (e) {
+                e.preventDefault();
+                document.logoutForm.submit();
+            })
+        });
+    </script>
+</body>
+</html>

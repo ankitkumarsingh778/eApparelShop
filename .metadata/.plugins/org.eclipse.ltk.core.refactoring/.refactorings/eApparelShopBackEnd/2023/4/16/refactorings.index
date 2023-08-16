@@ -1,0 +1,75 @@
+1681822492386	Rename package 'paging'
+1681903927114	Delete elements
+1681903985771	Rename package 'category'
+1681904237087	Rename package 'customer'
+1681904244771	Rename package 'paging'
+1681904253210	Rename package 'product'
+1681904363149	Rename package 'brand'
+1681904370992	Rename package 'setting'
+1681904457768	Delete elements
+1681904493927	Rename package 'admin'
+1681904518577	Rename package 'admin.brand'
+1681904552129	Rename package 'admin.category'
+1681904557665	Rename package 'admin.customer'
+1681904581256	Rename package 'admin.security'
+1681904612752	Rename package 'admin.paging'
+1681904620232	Rename package 'admin.product'
+1681904633443	Rename package 'admin.setting'
+1681904647674	Rename package 'admin.user'
+1681904660280	Rename package 'admin.setting.state'
+1681904693156	Delete elements
+1681904698344	Delete elements
+1681904783192	Delete element
+1681904799730	Delete element
+1681904823024	Delete element
+1681904868245	Rename package 'com.eApparelShop.admin.setting.country'
+1681904873129	Delete element
+1681904907956	Delete element
+1681905099870	Rename package 'com.eApparelShop.admin.setting.country'
+1681905138665	Delete element
+1681905172779	Delete element
+1681905301201	Copy package
+1681905328585	Delete element
+1681905332516	Delete element
+1681905417620	Delete element
+1681905420566	Delete element
+1681905424919	Delete element
+1681905620284	Rename package 'setting'
+1681905657136	Rename package 'setting.country'
+1681905677889	Copy package
+1681905704491	Delete element
+1681905773885	Delete element
+1681909362640	Delete elements
+1681909608758	Delete elements
+1681909924518	Delete element
+1681910120439	Delete elements
+1681910170020	Delete elements
+1681910350450	Delete elements
+1681910353334	Delete element
+1681910356011	Delete element
+1681910374596	Delete elements
+1681910554986	Delete element
+1681915325355	Delete element
+1681915582931	Move compilation unit
+1681915587552	Move compilation unit
+1681915593608	Delete element
+1681915612251	Move compilation unit
+1681915617114	Move compilation unit
+1681915622239	Move compilation unit
+1681915628244	Delete element
+1681918329106	Move compilation unit
+1681918333208	Move compilation unit
+1681918557161	Delete elements
+1681918578700	Rename package 'setting'
+1681918668795	Delete element
+1681918715370	Delete element
+1681918796204	Delete element
+1681918856665	Rename package 'setting'
+1681918926238	Move folder
+1681918929988	Move folder
+1681918937561	Delete element
+1681920544659	Delete element
+1682061607292	Rename package 'setting'
+1682061625434	Rename package 'setting.country'
+1682061638942	Rename package 'setting.state'
+1682095167076	Move file
